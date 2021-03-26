@@ -1,0 +1,7 @@
+app/views/home.py
+__pycache__
+.env
+.vscode
+*.db
+migrations
+  
