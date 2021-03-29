@@ -4,7 +4,7 @@ from httpx import get
 app = FastAPI()
 
 
-@app.get("/")
+@app.get("/docs")
 async def root():
     return {"200": "Consulte a Documentacao em /docs"}
 
