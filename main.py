@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"mensagem": "Consulte a Documentacao em /docs"}
+    return {"200": "Consulte a Documentacao em /docs"}
 
 @app.get("/busca_cep/{cep_id}")
 def busca_cep(cep_id  = '05145901'):   
