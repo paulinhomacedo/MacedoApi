@@ -1,15 +1,15 @@
 from flask import Flask
 
+from app import route
+
 
 def create_app():
     app = Flask(__name__)
 
-    @app.route('/')
+    '''@app.route('/')
     def hello_world():
-        return 'Hello, World!'
+        return 'Hello, World!'''
     
-    '''from app import route
-
-    route.init_app(app) '''  
+     route.init_app(app)  
 
     return app
