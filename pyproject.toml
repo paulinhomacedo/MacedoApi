@@ -2,11 +2,13 @@
 name = "macedoapi"
 version = "0.1.0"
 description = ""
-authors = ["phmacedo <macedopham@gmail.com>"]
+authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-Flask = "^1.1.2"
+httpx = "^0.17.1"
+fastapi = "^0.63.0"
+uvicorn = "^0.13.4"
 gunicorn = "^20.1.0"
 
 [tool.poetry.dev-dependencies]
