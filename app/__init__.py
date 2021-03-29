@@ -1,3 +1,11 @@
-from .app import create_app
+from flask import Flask
 
-__all__ = ["create_app",]
+
+def create_app():
+    app = Flask(__name__)
+    
+    from app import route
+
+    route.init_app(app)   
+
+    return app
