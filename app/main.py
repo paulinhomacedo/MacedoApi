@@ -1,12 +1,13 @@
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
 from httpx import get
 
 app = FastAPI()
 
 
-@app.get("/docs")
+@app.get("/")
 async def root():
-    return {"200": "Consulte a Documentacao em /docs"}
+    return RedirectResponse("/docs")
 
 @app.get("/busca_cep/{cep_id}")
 def busca_cep(cep_id  = '05145901'):   
